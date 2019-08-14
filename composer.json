@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Gurutheme_Welcomebar",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Integrate Welcome Bar with your website fastly.",
+    "authors": [
+    {
+        "name": "thienphuc",
+        "email": "phucvxt@goscom.vn"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

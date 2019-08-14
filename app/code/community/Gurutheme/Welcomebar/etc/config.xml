@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<config>    
+	<modules>
+        <Gurutheme_Welcomebar>
+            <version>0.1.0</version>
+        </Gurutheme_Welcomebar>
+    </modules>
+    <default>
+        <welcome_options>
+            <guruthemebar>
+                <script>
+                        <![CDATA[<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fc6630645ab4116"></script>
+<script type='text/javascript'>
+addthis.bar.initialize({'default':{
+	"backgroundColor": "#D61E5A",
+	"buttonColor": "#3B5998",
+	"textColor": "#FFFFFF",
+	"buttonTextColor": "#FFFFFF"
+},rules:[
+	{
+		"name": "Nothing",
+	
+		"backgroundColor": "#13C1ED",
+		
+		"message": "We LOVE our Customers! Use Promo Code HEART and get up to 20% OFF! Plus FREE Shipping and ZERO Sales Tax!",
+		"action": {
+			"type": "button",
+			"text": "Like",
+			"verb": "follow",
+			"service": "facebook",
+			"id" : "gurutheme"
+		}
+	}
+]});
+</script>]]>
+                </script>
+            
+            </guruthemebar>
+        </welcome_options>
+    
+    </default>
+	<global>
+		<helpers>
+			<welcomebar>
+				<class>Gurutheme_Welcomebar_Helper</class>
+			</welcomebar>
+		</helpers>
+        <models>
+            <!-- ... -->
+            <welcomebar>
+                <class>Gurutheme_Welcomebar_Model</class>
+            </welcomebar>   
+            <!-- ... -->
+        </models>
+        <blocks>
+            <welcomebar>
+                <class>Gurutheme_Welcomebar_Block</class>
+            </welcomebar>  
+        </blocks>		
+	</global>
+	
+    <frontend>
+        <routers>
+            <welcomebar>
+                <use>standard</use>
+                <args>
+                    <module>Gurutheme_Welcomebar</module>
+                    <frontName>welcomebar</frontName>
+                </args>
+            </welcomebar>
+        </routers>  
+        <layout>
+            <updates>
+                <welcomebar>
+                    <file>welcomebar.xml</file>
+                </welcomebar>
+            </updates>
+        </layout>
+    </frontend>
+
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <welcome_options>
+                                            <title>Configuration Addthis Welcome</title>
+                                        </welcome_options>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    
+</config>

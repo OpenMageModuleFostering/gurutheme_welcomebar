@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+    
+        <reference name="footer">
+            <block type="core/template" name="gurutheme.welcome.bar" template="gurutheme/welcomebar.phtml" ></block>
+            <action method="insert" ifconfig="welcome_options/guruthemebar/use_script"><block>gurutheme.welcome.bar</block></action>
+            
+        </reference>
+        
+    </default>
+</layout>

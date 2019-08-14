@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+		<welcomeconfig translate="label" module="welcomebar">
+			<label>Gurutheme</label>
+			<sort_order>99999</sort_order>
+		</welcomeconfig>
+	</tabs>	
+	<sections>
+		<welcome_options translate="label" module="welcomebar">
+			<label>Welcomebar</label>
+			<tab>welcomeconfig</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>1000</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+                <hint>
+                    <frontend_model>welcome/adminhtml_config_source_hint</frontend_model>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </hint>
+    			<guruthemebar translate="label">
+    				<label>Configuration</label>
+    				<frontend_type>text</frontend_type>
+    				<sort_order>1</sort_order>
+    				<show_in_default>1</show_in_default>
+    				<show_in_website>1</show_in_website>
+    				<show_in_store>1</show_in_store>                
+                	<fields>
+                        <use_script>
+                            <label>Enable Script : </label>
+                            <frontend_type>select</frontend_type>
+                            <!-- adding a source model -->
+                            <source_model>adminhtml/system_config_source_yesno</source_model>                           
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </use_script>
+                        <script>
+                            <label>Addthis welcome bar script: </label>
+                            <frontend_type>textarea</frontend_type>
+                            <comment>You can edit your script at  <![CDATA[<a href="https://www.addthis.com/get/welcome" target="_blank">Addthis welcome bar</a>]]></comment>                    
+                            <sort_order>2</sort_order> 
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><use_script>1</use_script></depends>                   
+                        </script>
+                       
+                  		
+                	</fields>                 
+    			</guruthemebar>
+			</groups>
+		</welcome_options>
+	</sections>		
+</config>

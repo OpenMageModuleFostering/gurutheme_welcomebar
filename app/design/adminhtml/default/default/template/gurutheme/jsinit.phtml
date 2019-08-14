@@ -1,0 +1,32 @@
+<?php
+/**
+
+ * This package designed for Magento COMMUNITY edition
+ * Gurutheme does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * Gurutheme does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   Gurutheme
+ * @package    Gurutheme_Welcome
+ * @version    1.0.1
+ * @copyright  Copyright (c) 2010-2012 Gurutheme Co. (http://www.magento.gurutheme.com)
+ */
+?>
+
+
+<?php if ($this->_section == 'gurustore'): ?>
+
+<div id="guru_store_response">
+
+    <?php echo $this->_getStoreData()->getTextResponse()?>
+</div>
+
+
+<?php endif; ?>
+
+
+<script type="text/javascript">
+    _section = '<?php echo $this->_section?>';
+</script>

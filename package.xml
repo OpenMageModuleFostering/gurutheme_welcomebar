@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+    <name>Gurutheme_Welcomebar</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Integrate Welcome Bar with your website fastly.</summary>
+    <description> This is a perfect extension you need to increase your sale. &#xD;
+</description>
+    <notes>First preview release</notes>
+    <authors><author><name>thienphuc</name><user>phucvxt</user><email>phucvxt@goscom.vn</email></author></authors>
+    <date>2013-05-11</date>
+    <time>07:19:57</time>
+    <contents><target name="magecommunity"><dir name="Gurutheme"><dir name="Welcome"><dir name="Block"><dir name="Adminhtml"><dir name="Config"><dir name="Source"><file name="Hint.php" hash="bb4acd67eff7621bda50215d7254c1b2"/></dir></dir></dir><file name="Jsinit.php" hash="aa0cf5e227880f9434d9981150e932e0"/></dir><dir name="Helper"><file name="Config.php" hash="a4dcf23c2adbeafae9e226ca9ff4f8d3"/><file name="Data.php" hash="b8e151317ba526c6a6a1fd28dea0eac4"/><file name="Versions.php" hash="0de959189a6819062a6b98285117b360"/></dir><dir name="etc"><file name="config.xml" hash="d0c3745607182f928b80ba148dd0bac3"/><file name="system.xml" hash="f88c75604e5f04594de72e7312fd2559"/></dir></dir><dir name="Welcomebar"><dir name="Block"><dir name="Adminhtml"><dir name="Config"><dir name="Source"><file name="Hint.php" hash="64062de41478b1deae68e91d88895a9b"/></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="a441dcbb3f26a87e6e2676b2a38362df"/></dir><dir name="etc"><file name="config.xml" hash="d778298410a76bf8fa030a79a3dca343"/><file name="system.xml" hash="91ee64882eef46648dc73d8154346ada"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Gurutheme_Welcomebar.xml" hash="7e9c33fc5c03104073b3f106cab024aa"/><file name="Gurutheme_Welcome.xml" hash="9d5ad0216fd40273e929846a6213138c"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="welcomebar.xml" hash="fbb49bbff25c3d87244837c29e12f7f0"/></dir><dir name="template"><dir name="gurutheme"><file name="welcomebar.phtml" hash="b3789030b36d5d56eabdc7f4fa8117a1"/></dir></dir></dir></dir><dir name="default"><dir name="default"><dir name="layout"><file name="welcomebar.xml" hash="d50f0c759665f86735cbe07ddcb24064"/></dir><dir name="template"><dir name="gurutheme"><file name="welcomebar.phtml" hash="b3789030b36d5d56eabdc7f4fa8117a1"/></dir></dir></dir></dir></dir><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="gurustore.xml" hash="7adb9929ee20909a6688a67b767ce73a"/></dir><dir name="template"><dir name="gurutheme"><file name="jsinit.phtml" hash="e51fb22cdcfbc10bf2e9c2430ba1514b"/></dir></dir></dir></dir></dir></target><target name="mage"><dir name="js"><dir name="gurutheme"><file name="gurutheme.js" hash="57d5b1ab63f0e0b6e76e9f3d2fddff19"/></dir></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="gurutheme"><dir name="css"><file name="window.css" hash="bdb9c84eaaf1b826b4ac88f0c01fc6c6"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
