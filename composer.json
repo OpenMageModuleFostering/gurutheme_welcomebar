@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Gurutheme_Welcomebar",
+    "name": "openmage-module-fostering\/gurutheme_welcomebar",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Integrate Welcome Bar with your website fastly.",
     "authors": [
